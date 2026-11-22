@@ -121,6 +121,6 @@ npm run release:build  # 在 artifacts/release/ 生成发布资产
 
 ## 许可
 
-MIT，见 [LICENSE](LICENSE)。消息表中的部分译文来自微软简体中文语言包（© Microsoft Corporation，MIT）。
+MIT，见 [LICENSE](LICENSE)。消息表中的部分译文来自微软简体中文语言包，第三方声明见 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)。
 
 Cursor 是 Anysphere, Inc. 的商标。本项目是独立的社区项目，与 Anysphere 没有隶属、认可或赞助关系，提及该名称仅用于说明适用的软件。

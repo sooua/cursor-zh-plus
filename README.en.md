@@ -108,6 +108,6 @@ Pushing to `main` with a commit message whose first line is `vX.Y.Z`, followed b
 
 ## License
 
-MIT, see [LICENSE](LICENSE). Part of the message-table translations come from Microsoft's Chinese (Simplified) Language Pack (© Microsoft Corporation, MIT).
+MIT, see [LICENSE](LICENSE). Part of the message-table translations come from Microsoft's Chinese (Simplified) Language Pack; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 
 Cursor is a trademark of Anysphere, Inc. This is an independent community project, not affiliated with, endorsed by or sponsored by Anysphere; the name only identifies the software it works with.
