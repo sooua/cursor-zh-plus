@@ -1,6 +1,6 @@
 {
   "name": "cursor-zh-plus",
-  "displayName": "Cursor 中文增强",
+  "displayName": "Cursor 中文汉化",
   "description": "补齐 Cursor 私有界面、Agents 窗口与消息表的简体中文翻译，配合微软简体中文语言包使用。",
   "version": "1.0.0",
   "publisher": "sooua",
@@ -41,11 +41,11 @@
     "commands": [
       {
         "command": "cursorZhPlus.openManager",
-        "title": "Cursor 中文增强：打开管理器"
+        "title": "Cursor 中文汉化：打开管理器"
       }
     ],
     "configuration": {
-      "title": "Cursor 中文增强",
+      "title": "Cursor 中文汉化",
       "properties": {
         "cursorZhCn.cursorRoot": {
           "type": "string",

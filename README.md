@@ -1,4 +1,4 @@
-<h1 align="center">Cursor 中文增强</h1>
+<h1 align="center">Cursor 中文汉化</h1>
 
 <p align="center">
   <b>让 Cursor 剩下的英文界面也变成中文。</b><br>
@@ -34,7 +34,7 @@
 
 1. 安装微软简体中文语言包，在命令面板运行 `Configure Display Language`，选择 `zh-cn`。
 2. 从 [Releases](https://github.com/sooua/cursor-zh-plus/releases) 下载 `cursor-zh-plus-<版本>.vsix`，在 Cursor 扩展面板中选择 **从 VSIX 安装**。
-3. 命令面板运行 **Cursor 中文增强：打开管理器**，点击 **应用汉化**。
+3. 命令面板运行 **Cursor 中文汉化：打开管理器**，点击 **应用汉化**。
 4. 点击 **重启 Cursor**。独立助手会关闭 Cursor、清理界面缓存、重建语言包缓存，然后重新打开 Cursor。
 
 管理器会自动查找安装目录，顺序为：已保存的配置 → 正在运行的 `Cursor.exe` → `PATH` → 注册表 → 常见安装路径。找不到时点 **浏览…** 手动选择包含 `resources\app` 的目录。

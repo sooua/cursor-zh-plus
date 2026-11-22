@@ -39,7 +39,7 @@ export class ManagerPanel {
 
     const panel = vscode.window.createWebviewPanel(
       'cursorZhPlusManager',
-      'Cursor 中文增强',
+      'Cursor 中文汉化',
       vscode.ViewColumn.One,
       { enableScripts: true, retainContextWhenHidden: true }
     );

@@ -52,13 +52,13 @@ export function renderManagerView(state: ManagerViewState, cspSource: string): s
   <meta charset="UTF-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src ${cspSource} 'unsafe-inline'; script-src 'nonce-${nonce}';">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cursor 中文增强</title>
+  <title>Cursor 中文汉化</title>
   <style>${styles}</style>
 </head>
 <body>
   <main class="shell" data-phase="${phase}" data-testid="manager" aria-busy="${busy}">
     <header class="top">
-      <h1>Cursor 中文增强</h1>
+      <h1>Cursor 中文汉化</h1>
       ${state.install?.version ? `<span class="chip" data-testid="cursor-version">Cursor ${escapeHtml(state.install.version)}</span>` : ''}
     </header>
 

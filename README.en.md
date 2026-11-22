@@ -1,4 +1,4 @@
-<h1 align="center">Cursor 中文增强</h1>
+<h1 align="center">Cursor 中文汉化</h1>
 
 <p align="center">
   <b>Translate the rest of Cursor into Simplified Chinese.</b><br>
@@ -34,7 +34,7 @@ You need Cursor 3.31.15 for Windows and Microsoft's `MS-CEINTL.vscode-language-p
 
 1. Install the Microsoft Chinese language pack, run `Configure Display Language` and pick `zh-cn`.
 2. Download `cursor-zh-plus-<version>.vsix` from [Releases](https://github.com/sooua/cursor-zh-plus/releases) and use **Install from VSIX** in Cursor.
-3. Run **Cursor 中文增强：打开管理器** from the Command Palette and click **应用汉化** (Apply).
+3. Run **Cursor 中文汉化：打开管理器** from the Command Palette and click **应用汉化** (Apply).
 4. Click **重启 Cursor** (Restart). A helper process closes Cursor, clears cached UI text, rebuilds the language-pack cache and reopens Cursor.
 
 The manager looks for Cursor in this order: saved setting → running `Cursor.exe` → `PATH` → registry → common install paths. If none of them works, click **浏览…** (Browse) and pick the folder that contains `resources\app`.
