@@ -1,0 +1,84 @@
+{
+  "name": "cursor-zh-plus",
+  "displayName": "Cursor 中文增强",
+  "description": "补齐 Cursor 私有界面、Agents 窗口与消息表的简体中文翻译，配合微软简体中文语言包使用。",
+  "version": "1.2.5",
+  "publisher": "sooua",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sooua/cursor-zh-plus"
+  },
+  "main": "./out/extension.js",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Language Packs"
+  ],
+  "contributes": {
+    "localizations": [
+      {
+        "languageId": "zh-cn",
+        "languageName": "Chinese Simplified",
+        "localizedLanguageName": "简体中文",
+        "translations": [
+          {
+            "id": "anysphere.cursor-always-local",
+            "path": "./translations/extensions/anysphere.cursor-always-local.i18n.json"
+          },
+          {
+            "id": "anysphere.cursor-retrieval",
+            "path": "./translations/extensions/anysphere.cursor-retrieval.i18n.json"
+          },
+          {
+            "id": "anysphere.cursor-shadow-workspace",
+            "path": "./translations/extensions/anysphere.cursor-shadow-workspace.i18n.json"
+          }
+        ]
+      }
+    ],
+    "commands": [
+      {
+        "command": "cursorZhPlus.openManager",
+        "title": "Cursor 中文增强：打开管理器"
+      }
+    ],
+    "configuration": {
+      "title": "Cursor 中文增强",
+      "properties": {
+        "cursorZhCn.cursorRoot": {
+          "type": "string",
+          "default": "",
+          "description": "Cursor 安装根目录，例如 D:cursor。留空时自动识别。"
+        },
+        "cursorZhCn.enableWorkbenchPatch": {
+          "type": "boolean",
+          "default": true,
+          "description": "允许修改 Cursor 的 workbench 文件以翻译硬编码界面。"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "version:sync": "node ./scripts/sync-version.mjs",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "vscode:prepublish": "npm run version:sync && npm run compile",
+    "extract": "node ./scripts/extract-cursor-nls.mjs",
+    "scan:workbench": "node ./scripts/scan-workbench-untranslated.mjs",
+    "scan:patch-sources": "node ./scripts/extract-workbench-patch-sources.mjs",
+    "package": "npm run version:sync && vsce package",
+    "release:build": "npm run version:sync && npm run compile && node ./scripts/build-release-assets.mjs",
+    "build": "npm run version:sync && npm run extract && npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.0",
+    "@types/vscode": "^1.105.0",
+    "@vscode/vsce": "latest",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "sql.js": "^1.14.1"
+  }
+}
